@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>MindNex HomePage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
@@ -216,7 +217,8 @@
     <p class="bodytext">
         "We believe in the power of small initiatives and Cognitive Behavioral Therapy (CBT)
         techniques to foster mental well-being. We offer informative articles, recommendations to empower your journey of personal
-        growth and transformation. Join us in shaping a supportive and mentally healthy world through the power of CBT
+        growth and transformation.<br><br>
+        Join us in shaping a supportive and mentally healthy world through the power of CBT
         thought diary practices"<br><br>
     </p>
 
@@ -230,7 +232,7 @@
             <input type="password" id="password" name="password" placeholder="Password">
             <button type="submit">Login</button>
             <div class="links">
-                <a class="create-link" href="#" onclick="openCreateUserWindow()">Create User</a>
+                <a class="create-link" href="#" data-bs-toggle="modal" data-bs-target="#createUserModal">Create User</a>
                 <a class="forgot-link" href="#" onclick="openForgetPasswordWindow()">Forgot Password</a>
             </div>
         </form>
